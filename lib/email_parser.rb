@@ -16,7 +16,7 @@ if @emails.include?(",")
 else
   emaillist = @emails.split(" ")
 end
-emaillist
+emaillist.uniq
 end
 
 
