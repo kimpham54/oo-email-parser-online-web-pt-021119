@@ -10,7 +10,6 @@ def initialize(emails)
 end
 
 def parse(emails)
-  parser = self.class.new
   emaillist = emails.split(",").split(" ")
   emallist
 end
