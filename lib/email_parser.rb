@@ -10,9 +10,12 @@ def initialize(emails)
 end
 
 def parse()
+if @emails.include?(",")
   emaillist = @emails.split(", ")
+else
   emaillist = @emails.split(" ")
-  emaillist
+end
+emaillist
 end
 
 
