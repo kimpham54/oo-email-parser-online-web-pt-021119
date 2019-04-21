@@ -11,7 +11,8 @@ end
 
 def parse()
 if @emails.include?(",")
-  emaillist = @emails.split(", ")
+  @emails.gsub!(",","")
+  emaillist = @emails.split(" ")
 else
   emaillist = @emails.split(" ")
 end
