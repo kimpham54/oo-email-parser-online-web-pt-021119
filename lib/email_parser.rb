@@ -9,8 +9,8 @@ def initialize(emails)
   @emails = emails
 end
 
-def parse(emails)
-  emaillist = emails.split(",").split(" ")
+def parse()
+  emaillist = @emails.split(",").split(" ")
   emallist
 end
 
